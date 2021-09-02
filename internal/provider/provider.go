@@ -26,21 +26,9 @@ func Provider() *schema.Provider {
 			},
 		},
 
-		DataSourcesMap: map[string]*schema.Resource{
-			//"runscope_integration":   dataSourceRunscopeIntegration(),
-			//"runscope_integrations":  dataSourceRunscopeIntegrations(),
-			//"runscope_bucket":        dataSourceRunscopeBucket(),
-			//"runscope_buckets":       dataSourceRunscopeBuckets(),
-			//"runscope_remote_agents": dataSourceRunscopeRemoteAgents(),
-		},
+		DataSourcesMap: map[string]*schema.Resource{},
 
-		ResourcesMap: map[string]*schema.Resource{
-			//"runscope_bucket":      resourceRunscopeBucket(),
-			//"runscope_test":        resourceRunscopeTest(),
-			//"runscope_environment": resourceRunscopeEnvironment(),
-			//"runscope_schedule":    resourceRunscopeSchedule(),
-			//"runscope_step":        resourceRunscopeStep(),
-		},
+		ResourcesMap: map[string]*schema.Resource{},
 
 		ConfigureContextFunc: providerConfigure,
 	}

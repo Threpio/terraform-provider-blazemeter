@@ -1,6 +1,8 @@
 package blazemeter
 
 import (
+	"json"
+	"context"
 	"bytes"
 	"fmt"
 	"io/ioutil"
@@ -36,13 +38,13 @@ func NewClient(options ...ClientOption) *Client {
 		option(client)
 	}
 
-	client.Test = TestClient{client: client}
-	client.Environment = EnvironmentClient{client: client}
-	client.Bucket = BucketClient{client: client}
-	client.Integration = IntegrationClient{client: client}
-	client.Schedule = ScheduleClient{client: client}
-	client.Step = StepClient{client: client}
-	client.RemoteAgent = RemoteAgentClient{client: client}
+	//client.Test = TestClient{client: client}
+	//client.Environment = EnvironmentClient{client: client}
+	//client.Bucket = BucketClient{client: client}
+	//client.Integration = IntegrationClient{client: client}
+	//client.Schedule = ScheduleClient{client: client}
+	//client.Step = StepClient{client: client}
+	//client.RemoteAgent = RemoteAgentClient{client: client}
 
 	return client
 }
