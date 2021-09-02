@@ -1,4 +1,4 @@
-package blazemeter
+package client
 
 import (
 	"json"
